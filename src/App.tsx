@@ -176,7 +176,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Page d'accueil */}
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" 
+          element={<Home />} />
 
         {/* Interface Client */}
         <Route 
@@ -198,7 +199,8 @@ function App() {
         </Route>
 
         {/* Interface Admin */}
-        <Route path="/admin" element={<AdminLayout />}>
+        <Route path="/admin" 
+          element={<AdminLayout />}>
           <Route index element={
             <AdminDashboard 
               claims={claims}
